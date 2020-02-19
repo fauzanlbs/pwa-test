@@ -172,7 +172,7 @@ class NewsList extends React.Component {
         return(
           <div className="mdc-layout-grid__cell" key={i}>
             <Link to={`/detail#${item.id}`}>
-              <div className="mdc-card">
+              <div className="mdc-card" style={{borderRadius:'5px'}}>
                 <section className="mdc-card__media card__16-9-media" style={styles}></section>
                 <section className="mdc-card__primary">
                   <h1 className="mdc-card__title mdc-card__title--medium">{item.webTitle}</h1>

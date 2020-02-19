@@ -67,7 +67,7 @@ class NewsDetail extends React.Component {
       return (
         <div id="detail">
           <div className="divider"></div>
-          <section className="typography--section mdc-typography">
+          <section className="typography--section mdc-typography" style={{borderRadius:'5px'}}>
             <div className='image'>
               <div dangerouslySetInnerHTML={{__html: this.sanitize(this.state.article.fields.main)}} ></div>  
             </div>

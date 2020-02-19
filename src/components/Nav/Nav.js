@@ -82,7 +82,7 @@ class Nav extends React.Component {
     return (
       <div>
         <header className="mdc-toolbar mdc-toolbar--fixed mdc-toolbar--waterfall">
-          <div className="mdc-toolbar__row">
+          <div style={{backgroundColor:'#333359'}} className="mdc-toolbar__row">
             <section className="mdc-toolbar__section mdc-toolbar__section--align-start">
               
               <span className="menu mdc-toolbar__icon mdc-toolbar__icon--menu" onClick={() => this.toggleDrawer()} >
@@ -93,7 +93,7 @@ class Nav extends React.Component {
                 <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="24" height="24" viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
               </span>
               
-              <span className="title mdc-toolbar__title">{this.state.title}</span>
+              <span style={{fontSize:20, fontWeight:'bold'}} className="title mdc-toolbar__title">{this.state.title}</span>
             </section>
             <section className="mdc-toolbar__section mdc-toolbar__section--align-end" role="toolbar">
               <div className="mdc-menu-anchor">
@@ -106,15 +106,15 @@ class Nav extends React.Component {
                     <li className="mdc-list-item" role="menuitem"  onClick={() => document.location.reload(true)} >Reload</li>
                     {/*<li className="mdc-list-item" role="menuitem" >Delete</li>*/}
                     <li className="mdc-list-divider" role="separator"></li>
-                    <li className="mdc-list-item" role="menuitem" onClick={() => this.share()} >Share...</li>
+                    <li className="mdc-list-item" role="menuitem"  >Share...</li>
                   </ul>
                 </div>
               </div>
             </section>
           </div>
         </header>
-        <aside className="mdc-temporary-drawer">
-          <nav className="mdc-temporary-drawer__drawer">
+        <aside  className="mdc-temporary-drawer">
+          <nav  className="mdc-temporary-drawer__drawer">
             
             <header className="mdc-temporary-drawer__header">
               <div className="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
@@ -122,7 +122,7 @@ class Nav extends React.Component {
               </div>
             </header>
 
-            <nav className="mdc-temporary-drawer__content mdc-list-group">
+            <nav  className="mdc-temporary-drawer__content mdc-list-group">
               <div className="mdc-list">
                 {listItems}
               </div>

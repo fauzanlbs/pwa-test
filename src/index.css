@@ -13,6 +13,6 @@
 
 body {
   margin: 0;
-  background-color: #eeeeee;
+  background:linear-gradient(to bottom, #343158 0%, #305871 100%);
   box-sizing: border-box;
 }
