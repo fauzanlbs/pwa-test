@@ -1,6 +1,6 @@
 {
-  "name": "Fauzan",
-  "short_name": "Fauzan",
+  "name": "Fauzan News",
+  "short_name": "Fauzan News",
   "icons": [{
         "src": "images/touch/icon-128x128new.png",
         "sizes": "128x128",
@@ -22,7 +22,7 @@
         "sizes": "512x512",
         "type": "image/png"
       }],
-  "start_url": "www.fauzanlubis.com",
+  "start_url": ".",
   "background_color": "maroon",
   "display": "standalone",
   "theme_color": "maroon"
