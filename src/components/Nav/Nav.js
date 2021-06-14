@@ -53,7 +53,7 @@ class Nav extends React.Component {
     if (navigator.share) {
       navigator.share({
         title: 'Aplikasi Berita',
-        text: 'Sumber dari The Guardian',
+        text: 'Aplikasi Berita',
         url: 'https://berita.fauzanlubis.com',
       })
       .then(() => console.log('Successful share'))
