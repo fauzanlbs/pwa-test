@@ -174,7 +174,7 @@ class NewsList extends React.Component {
             <Link to={`/detail#${item.id}`}>
               <div className="mdc-card" style={{borderRadius:'5px'}}>
                 <section className="mdc-card__media card__16-9-media" style={styles}></section>
-                <section className="mdc-card__primary">
+                <section className="mdc-card__primary" style={{backgroundColor:'aliceblue'}} >
                   <h1 style={{fontSize:'19px',fontFamily:'serif'}} className="mdc-card__title mdc-card__title--medium">{item.webTitle}</h1>
                   {/* <h2 className="mdc-card__subtitle">{item.webPublicationDate.slice(0,10)}</h2> */}
                 </section>   

@@ -102,11 +102,11 @@ class Nav extends React.Component {
                 </span>
                 <div className="mdc-simple-menu">
                   <ul className="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
-                    <li className="mdc-list-item update" role="menuitem">Update</li>
-                    <li className="mdc-list-item" role="menuitem"  onClick={() => document.location.reload(true)} >Reload</li>
+                    <li className="mdc-list-item update" role="menuitem">Perbaharui</li>
+                    <li className="mdc-list-item" role="menuitem"  onClick={() => document.location.reload(true)} >Load ulang</li>
                     {/*<li className="mdc-list-item" role="menuitem" >Delete</li>*/}
                     <li className="mdc-list-divider" role="separator"></li>
-                    <li className="mdc-list-item" role="menuitem" onClick={() => this.share()} >Share...</li>
+                    <li className="mdc-list-item" role="menuitem" onClick={() => this.share()} >Bagikan...</li>
                   </ul>
                 </div>
               </div>
@@ -117,8 +117,8 @@ class Nav extends React.Component {
           <nav  className="mdc-temporary-drawer__drawer">
             
             <header className="mdc-temporary-drawer__header">
-              <div className="mdc-temporary-drawer__header-content mdc-theme--primary-bg mdc-theme--text-primary-on-primary">
-                BERITA
+              <div className="mdc-temporary-drawer__header-content mdc-theme--text-primary-on-primary" style={{backgroundColor:'rgb(52 51 90)'}}>
+                
               </div>
             </header>
 
