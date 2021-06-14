@@ -1,6 +1,6 @@
 {
-  "name": "Fauzan News",
-  "short_name": "Fauzan News",
+  "name": "APLIKASI BERITA PWA",
+  "short_name": "APLIKASI BERITA PWA",
   "icons": [{
         "src": "images/touch/icon-128x128new.png",
         "sizes": "128x128",
