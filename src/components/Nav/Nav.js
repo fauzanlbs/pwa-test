@@ -52,8 +52,8 @@ class Nav extends React.Component {
   share() {
     if (navigator.share) {
       navigator.share({
-        title: 'Aplikasi berita',
-        text: 'Berita dari the guardian',
+        title: 'Aplikasi Berita',
+        text: 'Sumber dari The Guardian',
         url: 'https://berita.fauzanlubis.com',
       })
       .then(() => console.log('Successful share'))
@@ -106,7 +106,7 @@ class Nav extends React.Component {
                     <li className="mdc-list-item" role="menuitem"  onClick={() => document.location.reload(true)} >Reload</li>
                     {/*<li className="mdc-list-item" role="menuitem" >Delete</li>*/}
                     <li className="mdc-list-divider" role="separator"></li>
-                    <li className="mdc-list-item" role="menuitem"  >Share...</li>
+                    <li className="mdc-list-item" role="menuitem" onClick={() => this.share()} >Share...</li>
                   </ul>
                 </div>
               </div>
