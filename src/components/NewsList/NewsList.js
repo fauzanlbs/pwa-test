@@ -11,11 +11,11 @@ class NewsList extends React.Component {
   componentDidMount(){
     
     // Get news from db
-    this.getFromDb(window.location.hash.slice(1) || 'world');
+    this.getFromDb(window.location.hash.slice(1) || 'technology');
     
     // Listen to hash events
     window.addEventListener('hashchange',() => { 
-      this.getFromDb(window.location.hash.slice(1) || 'world');
+      this.getFromDb(window.location.hash.slice(1) || 'technology');
     }); 
 
     this.toggleIcons();
@@ -109,7 +109,7 @@ class NewsList extends React.Component {
       return;
     }
 
-    let sectionId = window.location.hash.slice(1) || 'world';
+    let sectionId = window.location.hash.slice(1) || 'technology';
     
     if(window.localStorage.downloadTimes){
 
@@ -175,8 +175,8 @@ class NewsList extends React.Component {
               <div className="mdc-card" style={{borderRadius:'5px'}}>
                 <section className="mdc-card__media card__16-9-media" style={styles}></section>
                 <section className="mdc-card__primary">
-                  <h1 className="mdc-card__title mdc-card__title--medium">{item.webTitle}</h1>
-                  <h2 className="mdc-card__subtitle">{item.webPublicationDate.slice(0,10)}</h2>
+                  <h1 style={{fontSize:'19px',fontFamily:'serif'}} className="mdc-card__title mdc-card__title--medium">{item.webTitle}</h1>
+                  {/* <h2 className="mdc-card__subtitle">{item.webPublicationDate.slice(0,10)}</h2> */}
                 </section>   
               </div>  
             </Link>

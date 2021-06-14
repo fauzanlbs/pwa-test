@@ -133,6 +133,6 @@ export default [
   },
   {
    "id":"world",
-   "webTitle":"World news"
+   "webTitle":"Berita"
   }
 ]
